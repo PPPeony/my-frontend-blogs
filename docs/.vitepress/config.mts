@@ -2,13 +2,13 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "我的前端学习笔记",
-  description: "用来记录我自学前端的过程所写的笔记",
+  title: "我的前端小窝",
+  description: "用来记录自己在前端上的学习",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Docs', link: '/markdown-examples' }
     ],
 
     sidebar: [
