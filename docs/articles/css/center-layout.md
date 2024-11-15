@@ -26,6 +26,15 @@ justity-content:center;
 align-items: center;
 ```
 
+
+#### 3、grid布局（justify- content + align-items）
+
+```css
+display: flex;
+justity-content:center;
+align-items: center;
+```
+
 #### 3、单行文本（行内元素）line-height+ text-align+vertical-align
 
 ```css
