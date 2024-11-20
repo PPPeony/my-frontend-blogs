@@ -12,13 +12,8 @@ export default defineConfig({
     ],
     sidebar: [
       {
-        text: 'Read Me',
-        items: [
-          {
-            text: 'Read Me',
-            link: '/readme'
-          }
-        ]
+        text: '你好👋',
+        link: '/readme'
       },
       {
         text: 'HTML',

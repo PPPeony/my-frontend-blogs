@@ -74,5 +74,5 @@ function outerFunction() {
 1.  **实现公有变量**：闭包可以在函数之间共享变量，而不必将它们作为全局变量。
 1.  **记忆（缓存）** ：闭包可以用于存储计算结果，以便在后续调用中重用，这种技术被称为记忆或缓存。
 
-### 4.参考
+### 4. 参考
 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Closures
