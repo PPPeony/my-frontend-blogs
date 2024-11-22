@@ -10,3 +10,8 @@
 5. html文档搞到了，浏览器里的进程，进程里的线程就开始工作了。
 6. 扫描器先快速的扫描一下文档到底外链了哪些资源，又在哪个地方，让后就让网络进程去获取。
 7. render线程去
+
+# 参考
+
+https://developer.mozilla.org/en-US/docs/Web/Performance/How_browsers_work
+https://developer.chrome.com/blog/inside-browser-part1

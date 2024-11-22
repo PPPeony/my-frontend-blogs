@@ -6,6 +6,8 @@
 >  
 >  A **Lexical Environment** is a specification type used to define the association of Identifiers to specific variables and functions based upon the lexical nesting structure of ECMAScript code.
 
+翻译一下：
+闭包就是一个函数和引用的变量（在该函数作用域之外声明的变量）的组合。
 
 **示例1:**
 
@@ -15,7 +17,7 @@ function init() {
   var name = "Mozilla"; // name 是一个被 init 创建的局部变量
   function displayName() {
     // displayName() 是内部函数，一个闭包
-    alert(name); // 使用了父函数中声明的变量
+    alert(name); // 使用了父级作用中声明的变量
   }
   displayName();
 }
@@ -55,9 +57,7 @@ function outerFunction() {
 
 在这个修改后的例子中，`c`在闭包`innerFunction`中被引用，所以它会被闭包“记住”，即使`outerFunction`执行完毕后，`c`也不会被垃圾收集器回收。
 
-### 2. 关于闭包的一个疑惑
-
-父函数返回了闭包，父函数执行完了，父函数的执行上下文会销毁吗？
+### 2. 父函数返回了闭包，父函数执行完了，父函数的执行上下文会销毁吗？
 
 在 JavaScript 中，当一个函数返回了一个闭包（也就是一个内部函数），那么这个内部函数会保留对其父函数作用域中的变量的引用。这就是所谓的 "闭包"。即使父函数已经执行完毕，这些变量仍然可以被内部函数访问，因为它们被内部函数的作用域链所引用。
 
@@ -75,4 +75,4 @@ function outerFunction() {
 1.  **记忆（缓存）** ：闭包可以用于存储计算结果，以便在后续调用中重用，这种技术被称为记忆或缓存。
 
 ### 4. 参考
-https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Closures
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures

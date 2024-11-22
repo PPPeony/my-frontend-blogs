@@ -129,25 +129,27 @@ export default defineConfig({
       },
       {
         text: '应用安全',
+        base: '/articles/web-secure/',
         items: [
+          { text: '综合方案', link: 'comprehensive-solution' },
           { text: 'xss攻击', link: 'xss-attack' },
           { text: 'crsf攻击', link: 'crsf-attack' }
         ]
       },
       {
         text: '工作踩坑',
+        base: '/articles/work-traps',
         items: [
-          { text: '微信小程序开发者工具', link: '/markdown-examples' },
+          { text: '微信小程序开发者工具', link: '/wxmp-dev-tool' },
           { text: '淘宝小程序加载sdk有问题', link: '/api-examples' },
-          { text: 'node-sass需要依赖的python环境无法安装', link: '/upload-big-file' }
+          { text: 'node-sass需要依赖的python环境无法安装', link: '/node-sass' }
         ]
       },
       {
         text: '英语学习',
+        base: 'english-leanring',
         items: [
-          { text: '渲染机制', link: '/markdown-examples' },
-          { text: '事件循环', link: '/api-examples' },
-          { text: '', link: '/upload-big-file' }
+          { text: '学习方法', link: '/english-learning' },
         ]
       },
       {
