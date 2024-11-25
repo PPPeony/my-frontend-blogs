@@ -8,7 +8,7 @@ hero:
   tagline: 有志者，事竟成
   actions:
     - theme: brand
-      text: Read Me
-      link: /readme.md
+      text: welcome
+      link: /hello.md
 ---
 
