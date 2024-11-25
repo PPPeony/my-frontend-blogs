@@ -29,10 +29,14 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '20'
-          
+
       # Runs a single command using the runners shell
       - name: Install dependencies
         run: npm install
+
+      # Ensure vitepress is installed globally (optional)
+      - name: Install vitepress globally
+        run: npm install -g vitepress
 
       # Runs a set of commands using the runners shell
       - name:  Build the project
