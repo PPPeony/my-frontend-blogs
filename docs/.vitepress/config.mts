@@ -8,12 +8,12 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/welcome' },
+      { text: 'Docs', link: '/welcome' },
     ],
     sidebar: [
       {
-        text: '你好👋',
-        link: '/readme'
+        text: '欢迎',
+        link: '/welcome'
       },
       {
         text: 'HTML',
