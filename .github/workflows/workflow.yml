@@ -42,11 +42,7 @@ jobs:
         id: deployment
         uses: actions/upload-pages-artifact@v3 # or specific "vX.X.X" version tag for this action
         with:
-          path: ./docs/.vuepress/dist
-
-      - name: Set environment URL
-        run: echo "page_url=https://pppeony.github.io/my-frontend-blogs/" >> $GITHUB_ENV
-        id: set_url  # 定义步骤 ID 为 set_url
+          path: docs/.vuepress/dist
 
   # Deployment job
   deploy:
