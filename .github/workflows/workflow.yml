@@ -38,9 +38,35 @@ jobs:
       - name:  Build the project
         run: npm run docs:build
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload static files as artifact
+        id: deployment
+        uses: actions/upload-pages-artifact@v3 # or specific "vX.X.X" version tag for this action
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN}}
-          publish_dir: ./docs/.vitepress/dist  # 确保这是你的打包输出目录
+          path: ./docs/.vuepress/dist
+
+      - name: Set environment URL
+        run: echo "page_url=https://pppeony.github.io/my-frontend-blogs/" >> $GITHUB_ENV
+        id: set_url  # 定义步骤 ID 为 set_url
+
+  # Deployment job
+  deploy:
+    # Add a dependency to the build job
+    needs: build
+
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    # Specify runner + deployment step
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4 # or specific "vX.X.X" version tag for this action
           
