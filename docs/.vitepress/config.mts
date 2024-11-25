@@ -17,8 +17,9 @@ export default defineConfig({
       },
       {
         text: 'HTML',
+        base: '/articles/html/',
         items: [
-          { text: 'HTML 5', link: '/articles/html/html5.md' },
+          { text: 'HTML 5', link: 'html5.md' },
         ]
       },
       {
@@ -28,7 +29,8 @@ export default defineConfig({
           { text: '闭包', link: 'closure' },
           { text: '作用域和执行栈', link: 'scope-and-excution-stack' },
           { text: '原型与继承', link: 'prototype-and-extend' },
-          { text: '垃圾回收', link: 'garbage-collection' }
+          { text: '垃圾回收', link: 'garbage-collection' },
+          { text: 'this指向问题', link: 'this' }
         ]
       },
       {
@@ -36,8 +38,8 @@ export default defineConfig({
         base: '/articles/css/',
         items: [
           { text: '居中布局', link: 'center-layout' },
+          { text: 'flex布局', link: 'flex-layout' },
           { text: '响应式', link: 'reponsive-layout' },
-          { text: 'Upload Big File', link: '/upload-big-file' }
         ]
       },
       {
@@ -56,6 +58,7 @@ export default defineConfig({
         items: [
           {
             text: 'vue',
+            base: 'vue',
             items: [{
               text: '源码解析',
               items: [{
@@ -63,60 +66,54 @@ export default defineConfig({
                 link: 'reactive-system'
               }, {
                 text: 'diff算法',
-                link: 'diff'
+                link: 'diff-algorithm'
               }]
             }]
           },
-          {
-            text: 'react',
-            items: [
-              {
-                text: '应用', link: ''
-              },
-              {
-                text: '', link: ''
-              }
-            ]
-          },
-          {
-            text: 'miniprogram',
-            items: [{
-              text: '微信小程序',
-              link: '',
-            }, {
-              text: 'taro',
-              link: '',
-            }, {
-              text: 'uniapp',
-              link: '',
-            }]
-          },
-        ]
-      },
-      {
-        text: 'Vue 源码分析',
-        base: '/articles/vue/',
-        items: [
-          { text: '响应式系统', link: 'reactive-system' },
-          { text: 'diff算法', link: 'diff' },
+          // {
+          //   text: 'react',
+          //   base: 'react',
+          //   items: [
+          //     {
+          //       text: '应用', link: ''
+          //     },
+          //     {
+          //       text: '', link: ''
+          //     }
+          //   ]
+          // },
+          // {
+          //   text: 'miniprogram',
+          //   base: 'miniprogram',
+          //   items: [{
+          //     text: '微信小程序',
+          //     link: '',
+          //   }, {
+          //     text: 'taro',
+          //     link: '',
+          //   }, {
+          //     text: 'uniapp',
+          //     link: '',
+          //   }]
+          // },
         ]
       },
       {
         text: '构建工具',
         base: '/articles/build-tools/',
         items: [
-          { text: 'webpack', link: '/webpack' },
-          { text: 'vite', link: '/vite' },
+          { text: 'webpack', link: 'webpack' },
+          { text: 'vite', link: 'vite' },
         ]
       },
       {
         text: 'Node',
         base: '/articles/node/',
         items: [
+          { text: '项目里的package.json到底是干什么的', link: 'package-json' },
           { text: 'commonjs', link: 'commonjs' },
           { text: '事件循环', link: 'event-loop' },
           { text: '后端框架koa', link: 'koa' },
-          { text: '项目里的package.json到底是干什么的', link: 'package-json' },
         ]
       },
       {
@@ -124,7 +121,10 @@ export default defineConfig({
         items: [
           { text: '大文件上传', link: 'big-file-upload' },
           { text: '懒加载列表', link: 'list-lazy-load' },
-          { text: '', link: '/upload-big-file' }
+          { text: '浏览器指纹', link: 'browser-footprint' },
+          { text: '处理excel', link: 'sheetjs-introduce' },
+          { text: '主题色切换', link: 'theme-toggle' },
+          { text: '搜索框', link: 'search-input' },
         ]
       },
       {
@@ -141,29 +141,29 @@ export default defineConfig({
         base: '/articles/work-traps',
         items: [
           { text: '微信小程序开发者工具', link: '/wxmp-dev-tool' },
-          { text: '淘宝小程序加载sdk有问题', link: '/api-examples' },
+          { text: '淘宝小程序加载sdk有问题', link: '/not-display-in-tobao-miniprogram' },
           { text: 'node-sass需要依赖的python环境无法安装', link: '/node-sass' }
         ]
       },
       {
         text: '英语学习',
-        base: 'english-leanring',
+        base: '/articles/english-leanring',
         items: [
-          { text: '学习方法', link: '/english-learning' },
+          { text: '学习方法', link: 'learning-methods' },
         ]
       },
       {
-        text: 'vscode插件',
+        text: 'vscode配置',
+        base: '/articles/vscode',
         items: [
-          { text: '渲染机制', link: '/markdown-examples' },
-          { text: '事件循环', link: '/api-examples' },
-          { text: '', link: '/upload-big-file' }
+          { text: '好用的vsode插件', link: 'index' },
+     
         ]
       },
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/PPPeony/my-frontend-blogs' }
     ]
   }
 })
