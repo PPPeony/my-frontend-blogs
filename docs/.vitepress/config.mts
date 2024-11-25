@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "我的前端小窝",
+  base: './',
   description: "用来记录自己在前端上的学习",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
