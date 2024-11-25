@@ -9,6 +9,6 @@ hero:
   actions:
     - theme: brand
       text: welcome
-      link: /hello.md
+      link: /welcome.md
 ---
 
