@@ -49,7 +49,7 @@ export default defineConfig({
           { text: '渲染机制', link: 'render-mechanism' },
           { text: '事件循环', link: 'event-loop' },
           { text: '浏览器缓存', link: 'browser-cache' },
-          { text: '跨域处理', link: 'cors-resolve' }
+          { text: '同源策略和跨源资源共享', link: 'sop-and-cors' }
         ]
       },
       {
@@ -144,6 +144,11 @@ export default defineConfig({
           { text: '淘宝小程序加载sdk有问题', link: '/not-display-in-tobao-miniprogram' },
           { text: 'node-sass需要依赖的python环境无法安装', link: '/node-sass' }
         ]
+      },
+      {
+        text: '优化',
+        base: '/articles/optimization',
+        link: 'index'
       },
       {
         text: '英语学习',
