@@ -68,7 +68,7 @@ XSS 攻击可以分为三类：存储（也称为持久）、反射（也称为�
   1. 限制执行
     - 改成纯前端渲染，把代码和数据分隔开，意思就是后端的返回里不能包含html的元素。而且注意避免 DOM 型 XSS 漏洞。
     - 使用xssjs或者dompurify等库对输出数据进行转义或者过滤。
-    - 配置csp。(csp可以设置在html上也可以设置在请求头上，建议弄在请求头上，不然开发的时候很不方便。)
+    - 配置csp。(csp可以设置在html上也可以设置在响应头上。建议弄在响应头上，不然开发的时候很不方便。)
     - waf拦截。
   2. 限制获取敏感数据
     - HTTP-only Cookie: 禁止 JavaScript 读取某些敏感 Cookie，攻击者完成 XSS 注入后也无法窃取此 Cookie。
@@ -76,7 +76,9 @@ XSS 攻击可以分为三类：存储（也称为持久）、反射（也称为�
 
 ### 5. 参考
 https://developer.mozilla.org/en-US/docs/Glossary/Cross-site_scripting
+
 https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
+
 https://juejin.cn/post/6844903685122703367?searchId=202411221019020649E06AD4DD096B9647（墙裂推荐去看美团技术团队的这篇文章，比较详尽）
 
 ### 6. 其他
