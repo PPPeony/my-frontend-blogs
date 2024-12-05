@@ -125,7 +125,7 @@ http缓存存储了和请求有关的响应，并且后续相同的请求将使�
 
 
    1. **使用Last-Modified和If-Modified-Since**
-      ![alt text](validation.png)
+      ![alt text](validation-last-modified.png)
       上图发生了两个请求。
 
       第一次响应是在22:22:22生成的，最大age为1小时，所以你知道它在23:22:22之前都是新鲜的。

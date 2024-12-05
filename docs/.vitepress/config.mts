@@ -28,7 +28,7 @@ export default defineConfig({
         items: [
           { text: '闭包', link: 'closure' },
           { text: '作用域和执行栈', link: 'scope-and-excution-stack' },
-          { text: '原型与继承', link: 'prototype-and-extend' },
+          { text: '原型与继承', link: 'prototype-and-inherit' },
           { text: '垃圾回收', link: 'garbage-collection' },
           { text: 'this指向问题', link: 'this' }
         ]

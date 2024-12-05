@@ -18,3 +18,5 @@
 2. 不需要构造函数的（原型式继承、寄生继承）
 3. 寄生式组合继承（是为了优化组合继承两次实例化父类构造函数的问题，其实在第二次调用，subType.prototype 的时候我们根本不需要实例化构造函数，我们只需要subType.prototype.__proto__ 指向的是superType.prototype就行了，这一步的话就用寄生继承来时实现）
 
+### 参考
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
