@@ -44,12 +44,18 @@ export default defineConfig({
       },
       {
         text: '浏览器',
-        base: '/articles/browser/',
+        base: '/articles/http/',
         items: [
           { text: '渲染机制', link: 'render-mechanism' },
           { text: '事件循环', link: 'event-loop' },
-          { text: '浏览器缓存', link: 'browser-cache' },
           { text: '同源策略和跨源资源共享', link: 'sop-and-cors' }
+        ]
+      },
+      {
+        text: 'http',
+        base: '/articles/http/',
+        items: [
+          { text: 'http缓存', link: 'http-cache' },
         ]
       },
       {
